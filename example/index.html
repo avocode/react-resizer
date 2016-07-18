@@ -1,0 +1,55 @@
+<!doctype html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    body{
+      margin: 0;
+    }
+
+    .flex-container{
+      display: flex;
+    }
+
+    .flex-item {
+      display: flex;
+      -ms-flex-direction: column;
+      flex-direction: column;
+
+      background-color: cornflowerblue;
+      height: 200px;
+    }
+
+    .flex-content{
+      flex: 1;
+      display: flex;
+
+      box-sizing: border-box;
+      padding: 10px;
+      background: #84FFFF;
+    }
+
+    .resizer{
+      position: relative;
+      height: 100%;
+      padding: 10px;
+    }
+
+    .handle{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 5px;
+      height: 100%;
+      background: #00E5FF;
+    }
+
+    .handle:hover{
+      cursor: col-resize;
+    }
+  </style>
+</head>
+
+<div id="app"></div>
+
+<script src="/node_modules/react/dist/react-with-addons.js"></script>
+<script src="/index.js"></script>

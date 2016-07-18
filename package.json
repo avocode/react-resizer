@@ -1,0 +1,55 @@
+{
+  "name": "react-resizer",
+  "description": "React Resizer",
+  "version": "0.1.0",
+  "license": "MIT",
+  "main": "./",
+  "maintainers": [
+    {
+      "name": "Tomáš Stankovič",
+      "email": "tomas.stankovic@avocode.com"
+    }
+  ],
+  "keywords": [
+    "react",
+    "react-component",
+    "resizer"
+  ],
+  "scripts": {
+    "prepublish": "coffee -o ./ src/",
+    "start": "webpack-dev-server --hot --progress --colors",
+    "test": "mocha && istanbul report text-summary lcov",
+    "fast-test": "mocha"
+  },
+  "peerDependencies": {
+    "react": "^0.14.8 || ^15"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/avocode/react-resizer.git",
+    "web": "http://github.com/avocode/react-resizer"
+  },
+  "bugs": {
+    "url": "http://github.com/avocode/react-resizer/issues"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-enzyme": "^0.5.0",
+    "coffee-coverage": "^1.0.1",
+    "coffee-loader": "^0.7.0",
+    "coffee-script": "^1.9.3",
+    "enzyme": "^2.2.0",
+    "istanbul": "^0.4.2",
+    "jsdom": "^9.4.1",
+    "lodash": "^4.8.2",
+    "mocha": "^2.2.5",
+    "react": "^15.1.0",
+    "react-addons-test-utils": "^15.1.0",
+    "react-dom": "^15.2.1",
+    "simulant": "^0.2.2",
+    "sinon": "^1.17.4",
+    "webpack": "^1.11.0",
+    "webpack-dev-server": "^1.10.1"
+  },
+  "dependencies": {}
+}
