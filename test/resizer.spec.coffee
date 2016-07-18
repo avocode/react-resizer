@@ -1,4 +1,4 @@
-Resizer = React.createFactory require '../src/'
+Resizer = require '../src/'
 
 describe 'Resizer component:', ->
 
@@ -43,4 +43,3 @@ describe 'Resizer component:', ->
   it 'should work className prop', ->
     {wrapper} = mountRender(Resizer, baseProps)
     expect(wrapper.find('.resizer')).to.have.className('sidebar')
-

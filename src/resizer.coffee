@@ -66,6 +66,6 @@ Resizer = React.createClass
         onMouseDown: @_handleMouseDown
         className: "handle #{@props.handleClassName}"
 
-      @props.children?
+      @props.children
 
 module.exports = Resizer
