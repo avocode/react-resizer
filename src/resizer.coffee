@@ -1,6 +1,6 @@
 React = require 'react'
 
-{div} = React.DOM
+{ div } = React.DOM
 
 Resizer = React.createClass
   displayName: 'Resizer'
