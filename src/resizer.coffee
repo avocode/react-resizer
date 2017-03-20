@@ -26,6 +26,7 @@ Resizer = React.createClass
     y: 0
 
   _handleMouseMove: (e) ->
+    e.preventDefault()
     if @props.direction is 'x'
       diff = @_startPosition.x - e.clientX
 
@@ -41,6 +42,7 @@ Resizer = React.createClass
     @_updateStartPosition(e)
 
   _handleMouseDown: (e) ->
+    e.preventDefault()
     @props.onResizeStart?(e)
     @_updateStartPosition(e)
     window.addEventListener 'mouseup', @_handleMouseUp
