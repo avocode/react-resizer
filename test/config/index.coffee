@@ -1,5 +1,6 @@
 chai = require 'chai'
 chaiEnzyme = require 'chai-enzyme'
+Adapter = require 'enzyme-adapter-react-16'
 
 chai.use(chaiEnzyme())
 
@@ -9,6 +10,8 @@ global.sinon = require 'sinon'
 global._ = require 'lodash'
 global.enzyme = require 'enzyme'
 global.React = require 'react'
+
+enzyme.configure({ adapter: new Adapter() });
 
 global.mountRender = (Component, props = {}, context = {}) ->
   element = React.createElement(Component, props)
