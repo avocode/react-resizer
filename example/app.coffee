@@ -1,9 +1,11 @@
 React = require 'react'
+ReactDOM = require 'react-dom-factories'
+createClass = require 'create-react-class'
 Resizer = React.createFactory(require '../src/')
 
-{div} = React.DOM
+{div} = ReactDOM
 
-module.exports = React.createClass
+module.exports = createClass
   displayName: 'App'
 
   getInitialState: ->

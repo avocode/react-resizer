@@ -1,17 +1,20 @@
 React = require 'react'
+ReactDOM = require 'react-dom-factories'
+createClass = require 'create-react-class'
+PropTypes = require 'prop-types'
 
-{ div } = React.DOM
+{ div } = ReactDOM
 
-Resizer = React.createClass
+Resizer = createClass
   displayName: 'Resizer'
 
   propTypes:
-    className: React.PropTypes.string
-    handleClassName: React.PropTypes.string
-    direction: React.PropTypes.string
-    onResizeStart: React.PropTypes.func
-    onResize: React.PropTypes.func.isRequired
-    onResizeEnd: React.PropTypes.func
+    className: PropTypes.string
+    handleClassName: PropTypes.string
+    direction: PropTypes.string
+    onResizeStart: PropTypes.func
+    onResize: PropTypes.func.isRequired
+    onResizeEnd: PropTypes.func
 
   getDefaultProps: ->
     className: ''
