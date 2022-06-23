@@ -41,7 +41,7 @@
     "enzyme": "^3.0.0",
     "enzyme-adapter-react-16": "^1.15.1",
     "istanbul": "^0.4.2",
-    "jsdom": "^9.4.1",
+    "jsdom": "^16.5.0",
     "lodash": "^4.8.2",
     "mocha": "^2.2.5",
     "react": "^16",
